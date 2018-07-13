@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using WeChatTools.Core;
 
@@ -17,9 +16,9 @@ namespace ImgTuiGuang
            
             getImg(context);
 
-            context.Response.End();
+          
         }
-
+        
         private void getImg(HttpContext context)
         {
             HttpHelper helper = new HttpHelper();
