@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.html" />
+    <Content Include="img\wx_tip.png" />
     <Content Include="index.html" />
     <Content Include="jscss\ace-extra.min.js" />
     <Content Include="jscss\ace.js" />
