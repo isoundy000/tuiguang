@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.bnyrkm.cn/ -->
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>app下载</title>
+    <meta name="keywords" content="app下载">
+    <meta name="description" content="app下载">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./jscss/bootstrap.min.css">
+    <link rel="stylesheet" href="./jscss/font-awesome.min.css">
+    <link rel="stylesheet" href="./jscss/animate.css">
+    <link rel="stylesheet" href="./jscss/styles.css">
+    <link rel="stylesheet" href="./jscss/app.css">
+    <link rel="stylesheet" href="./jscss/iosdownload.css">
+    <script src="./jscss/jquery-1.10.2.js"></script>
+    <script src="./jscss/modernizr.custom.js"></script>
+    <script src="./jscss/bootstrap.min.js"></script>
+    <script src="./jscss/ace-extra.min.js"></script>
+    <script src="./jscss/jquery-cookie.js"></script>
+    <script src="./jscss/base.js"></script>
+    <script src="./jscss/clipboard_1.7.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->     
+    <link rel="stylesheet" href="./jscss/layer.css" id="layui_layer_skinlayercss" style="">
+</head>
+<body style="">
+
+
+
+    <div class="container">
+
+        <div class="titleHead">
+            <div class="appTitle">app下载</div>
+        </div>
+ 
+        <div class="text-center">
+            <div class="margin-bottom-20">
+                <div id="showtext">
+                    正在安装，请按 Home 键在桌面查看
+                    <br> <button onclick="location.href = '/app.mobileprovision'">立即信任</button>
+                </div>
+                <div class="loading"></div>
+                 
+                <a class="down_load installButton" id="btnInstallToAndroid" href="http://www.bnyrkm.cn/jj028.apk">
+                    <i class="icon-android"></i>
+                    点击安装
+                </a>
+            </div>
+        </div>
+  
+        <div class="bottom">
+            <p>
+                用手机扫描下面的二维码安装
+            </p>
+            <div>
+                <img src="./jscss/weixin.png" class="" alt="W3School">
+            </div>
+            <br>
+  
+            <div>
+                或用手机浏览器打开网址: http://www.bnyrkm.cn/ <a id="copy_button" href="http://www.bnyrkm.cn/#none" data-clipboard-text="http://www.bnyrkm.cn/" aria-label="复制成功！">复制</a>
+            </div>
+            <hr>
+            <div>
+
+            </div>
+            <div class="weixin-tip" id="weixinTip">
+                <p>
+                    <img id="weixinImg" style="max-width:90%" alt="微信打开">
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        function getHeight(id) {
+
+            return $("#" + id).height();
+        }
+        function setHeight(id, h) {
+            $("#" + id).height(h)
+        }
+        function getUrl(url) {
+            var xmlhttp = null;
+            if (window.XMLHttpRequest) {// code for all new browsers
+                xmlhttp = new XMLHttpRequest();
+            } else if (window.ActiveXObject) {// code for IE5 and IE6
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if (xmlhttp != null) {
+                xmlhttp.open("GET", url, true);
+                xmlhttp.send(null);
+            }
+        }
+
+        function adjustSize() {
+            var containerHeight = getHeight("container");
+            var footerHeight = getHeight("footer");
+
+            var windowHeight = window.innerHeight;
+            if (windowHeight > footerHeight + containerHeight) {
+                setHeight("container", windowHeight - footerHeight);
+            }
+        }
+        window.onresize = function () {
+            adjustSize();
+        }
+
+        $(document).ready(function () {
+            adjustSize();
+            mongolia();
+        });
+
+        var clipboard = new Clipboard('#copy_button');
+        clipboard.on('success', function (e) {
+            var msg = e.trigger.getAttribute('aria-label');
+            alert(msg);
+            e.clearSelection();
+        });
+        function mongolia() {
+            var winHeight = window.screen.height;
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
+                        trident: u.indexOf('Trident') > -1,
+                        presto: u.indexOf('Presto') > -1,
+                        webKit: u.indexOf('AppleWebKit') > -1,
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/),
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+                        iPad: u.indexOf('iPad') > -1,
+                        webApp: u.indexOf('Safari') == -1
+                    };
+                }()
+            }
+            function is_weixin() {
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            if (is_weixin()) {
+                var weixinImg = document.getElementById("weixinImg");
+                weixinImg.setAttribute("src", "/img/wx_tip.png");
+                var weixinTip = document.getElementById("weixinTip");
+                weixinTip.style.height = winHeight;
+                weixinTip.style.display = "block";
+
+            }
+
+            if (browser.versions.ios) {
+                $("#btnInstallToIOS").show();
+                $("#btnInstallToAndroid").hide();
+            } else {
+
+                $("#btnInstallToIOS").hide();
+                $("#btnInstallToAndroid").show();
+            }
+
+            $('.down_load').click(function () {
+                $(".down_load").hide();
+                $("#showtext").show();
+            });
+        }
+
+
+    </script>
+
+    <script src="./jscss/jquery-ui.custom.min.js"></script>
+    <script src="./jscss/ace.js"></script>
+    <script src="./jscss/slick.min.js"></script>
+    <script src="./jscss/jquery.themepunch.plugins.min.js"></script>
+    <script src="./jscss/jquery.themepunch.revolution.min.js"></script>
+    <script src="./jscss/waypoints.min.js"></script>
+    <script src="./jscss/scripts.js"></script>
+    <script src="./jscss/layer.js"></script>
+    <div style="display:none">
+    </div>
+
+</body>
+</html>

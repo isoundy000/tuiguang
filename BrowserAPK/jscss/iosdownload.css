@@ -1,0 +1,11 @@
+﻿.click_opacity { width: 100%; height: 100%; background: #000; opacity: 0.6; position: fixed; z-index: 10000; top: 0px; }
+.to_btn { position: fixed; top: 10px; right: 10px; text-align: right; z-index: 10001; font-family: "微软雅黑"; }
+.to_btn span { display: block; }
+.to_btn img { width: 20%; height: auto; display: inline-block; }
+.to_btn .span1 { font-size: 1.6rem; color: #fff; margin-top: 5px; }
+.to_btn { color: #fff; }
+.to_btn .span2 { display: inline-block; line-height: 36px; width: 80%; margin-bottom: 12px; text-align: left; font-size: 16px; }
+.to_btn .span2 em { display: inline-block; width: 16px; height: 16px; background: #009dd9; color: #fff; font-size: 12px; text-align: center; line-height: 16px; border: 1px solid #fff; border-radius: 50%; margin-right: 3px; }
+.to_btn .span2 img { display: inline-block; width: 30px; height: 30px; margin: 0px 5px; }
+.to_btn span { display: block; float: right; }
+.to_btn .android_open img { display: inline-block; width: 150px; height: 34px; }
