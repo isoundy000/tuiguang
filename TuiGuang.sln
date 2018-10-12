@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatTools.Core", "WeChatT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserAPK", "BrowserAPK\BrowserAPK.csproj", "{5AC8582F-FF1A-42A8-BD0B-FFFEB12B7F66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImgTuiGuang2", "ImgTuiGuang2\ImgTuiGuang2.csproj", "{9BD5F87B-F0C7-421D-A6CA-29BC01DCEFC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5AC8582F-FF1A-42A8-BD0B-FFFEB12B7F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AC8582F-FF1A-42A8-BD0B-FFFEB12B7F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AC8582F-FF1A-42A8-BD0B-FFFEB12B7F66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD5F87B-F0C7-421D-A6CA-29BC01DCEFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD5F87B-F0C7-421D-A6CA-29BC01DCEFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD5F87B-F0C7-421D-A6CA-29BC01DCEFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD5F87B-F0C7-421D-A6CA-29BC01DCEFC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
