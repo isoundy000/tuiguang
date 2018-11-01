@@ -49,6 +49,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="clothes\1.jpg" />
+    <Content Include="clothes\10.jpg" />
+    <Content Include="clothes\2.jpg" />
+    <Content Include="clothes\3.jpg" />
+    <Content Include="clothes\4.jpg" />
+    <Content Include="clothes\5.jpg" />
+    <Content Include="clothes\6.jpg" />
+    <Content Include="clothes\7.jpg" />
+    <Content Include="clothes\8.jpg" />
+    <Content Include="clothes\9.jpg" />
+    <Content Include="default.html" />
     <Content Include="files\1%281%29.jpg" />
     <Content Include="files\1.jpg" />
     <Content Include="files\2%281%29.jpg" />
