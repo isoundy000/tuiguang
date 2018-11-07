@@ -428,17 +428,12 @@
 <script type="text/javascript" src="./index2/jquery.min.js"></script>
 <script src="./index2/clipboard.min.js"></script>
 <script language="JavaScript" type="text/javascript"> 
-         var qrcodes = [{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/img\/1_1541563462_zM4LmlP0mn.png","wechat":"wo15777313078"},{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/img\/1_1541563462_FM7oUfOjdr.png","wechat":"hootrn86"},{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/img\/1_1541563462_miOsD07Xnt.png","wechat":"yyyy2651703693"},{"url":"http:\/\/cc-wechat.oss-cn-qingdao.aliyuncs.com\/img\/1_1541563463_gMMKZdg256.png","wechat":"l1356003848"}];
-        var imagesNum = qrcodes.length;
-        var num = Math.floor(Math.random() * imagesNum) + 1;
-        var key = num-1;
-        if(qrcodes != ''){
-            if(qrcodes[key].wechat.indexOf('-') > -1){
-                var wechat = qrcodes[key].wechat.split('-')[1];
-            }else{
-                var wechat = qrcodes[key].wechat;
-            }
-            $('.qrcode_here').html('<img src="'+qrcodes[key].url+'?t='+Math.random()+'" class="img-rounded all-image" alt="指导员">');
+    qrcodes = ['ran15176802977', 'Lsq3026815291', 'jiuyao8888811', 'qry199507', 'n647921', 'huomingtao123', 'asd2574652634', 'xmsmzlbj'];
+    if(qrcodes != ''){
+           var wx_index = Math.floor((Math.random() * qrcodes.length));
+            var wechat = qrcodes[wx_index];
+            var img = qrcodes[wx_index] + ".jpg";
+            $('.qrcode_here').html('<img src="qrcode/'+img+'?t='+Math.random()+'" class="img-rounded all-image" alt="指导员">');
             $('.qrcode_id').html(wechat);
         }
 </script> 
