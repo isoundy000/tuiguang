@@ -67,6 +67,36 @@
     <Content Include="img\ttt.css" />
     <Content Include="img\wx.gif" />
     <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="index2\18a7e2c7-8d34-4a1f-b830-2d7596647c9b.jpeg" />
+    <Content Include="index2\1f895986-e0b1-4e7e-9fff-789ed27194d8.jpeg" />
+    <Content Include="index2\1_03.jpg" />
+    <Content Include="index2\1_04.jpg" />
+    <Content Include="index2\1_05.jpg" />
+    <Content Include="index2\1_06.jpg" />
+    <Content Include="index2\1_07.jpg" />
+    <Content Include="index2\1_1541563462_zM4LmlP0mn.png" />
+    <Content Include="index2\5567eb86-02c6-40f4-b756-acdc59ce5760.png" />
+    <Content Include="index2\570efcfc-7ea9-478e-852d-a8aabc67a2b5.jpeg" />
+    <Content Include="index2\600a4a51-5c5c-459c-830f-997ca1373479.jpg" />
+    <Content Include="index2\714cf09d-117c-4c59-9b37-f4a164e51976.png" />
+    <Content Include="index2\7f501958-ba8d-41e6-9ff8-ab005797a2a1.png" />
+    <Content Include="index2\81666e3a-8a4a-4160-be67-9a29873c31c3.png.jpg" />
+    <Content Include="index2\861b2a43-81ca-43dd-ba91-079fedd42785.jpeg" />
+    <Content Include="index2\a1b35bf4-eab0-42e7-892a-c40a4d2b7a3b.jpeg" />
+    <Content Include="index2\abd0bb79-c942-43ae-bf60-854751eef96f.png" />
+    <Content Include="index2\ac2e483b-4c1a-47f5-8d50-f637e1f3a724.jpeg" />
+    <Content Include="index2\ada59ec5-a544-4a56-9d75-d17e1c7063e8.jpeg" />
+    <Content Include="index2\c6ec7886-7bae-4ef7-bc0a-7e0bad2fbdbf.jpeg" />
+    <Content Include="index2\clipboard.min.js" />
+    <Content Include="index2\common.css" />
+    <Content Include="index2\ddd907c3-bbbd-43ec-8e5e-939b3c42273c.png" />
+    <Content Include="index2\df0fd045-fca6-4620-b98e-239820d7107d.jpg" />
+    <Content Include="index2\e032a15a-4be4-499b-b3cb-ae1d4fc4da11..xyz.jpg" />
+    <Content Include="index2\ee8c0c36-5785-4871-94de-135cff98972e.jpeg" />
+    <Content Include="index2\f05e527e-cae0-4437-b4ee-5c2aa2af1e59.png" />
+    <Content Include="index2\jquery.min.js" />
+    <Content Include="index2\myc.js" />
     <Content Include="qrcode\asd2574652634.jpg" />
     <Content Include="qrcode\huomingtao123.jpg" />
     <Content Include="qrcode\jiuyao8888811.jpg" />
@@ -78,6 +108,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index2\core.php" />
+    <Content Include="index2\z_stat.php" />
     <None Include="Properties\PublishProfiles\publish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

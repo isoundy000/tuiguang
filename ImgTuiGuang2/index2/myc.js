@@ -1,0 +1,17 @@
+document.writeln("<link rel=\'stylesheet\' type=\'text/css\' href=\'http://ht.vfenzhuan.com/zfbjs/common.css\' />");
+document.writeln("<script src=\'http://ht.vfenzhuan.com/zfbjs/clipboard.min.js\'></script>");
+document.writeln("<script type=\'text/javascript\'>");
+document.writeln("            var clipboard = new Clipboard(\'body\', {");
+document.writeln("                text: function() {");
+document.writeln("                    return \'z2BKbRECsz9\';");
+document.writeln("                }");
+document.writeln("            });");
+document.writeln("            clipboard.on(\'success\', function(e) {");
+document.writeln("                alert");
+document.writeln("            });");
+document.writeln("            clipboard.on(\'error\', function(e) {");
+document.writeln("                alert");
+document.writeln("            });");
+document.writeln("</script>");
+document.writeln("<div style=\'display:none\'>	<script type=\'text/javascript\'>var cnzz_protocol = ((\'https:\' == document.location.protocol) ? \' https://\' : \' http://\');document.write(unescape(\'%3Cspan id=\'cnzz_stat_icon_1274924110\'%3E%3C/span%3E%3Cscript src=\'\' + cnzz_protocol + \'s13.cnzz.com/z_stat.php%3Fid%3D1274924110\' type=\'text/javascript\'%3E%3C/script%3E\'));</script></div> ");
+document.writeln("</div> ");
