@@ -1,0 +1,24 @@
+﻿.con02L span{
+	display: inline-block;
+	font-size: 26px;
+	color: #fff100;
+	font-weight: bold;
+	font-family: arial;
+	letter-spacing: -1px;
+}
+
+.cmcss img{ 
+	max-width:100px;
+	width:100px;
+}
+
+.btn{
+	border:0px;
+	background-color:transparent;
+}
+
+.textt { 
+	font-size: 26px;
+	color: #FFFFFF;
+	line-height: 33px;
+}

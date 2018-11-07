@@ -97,6 +97,34 @@
     <Content Include="index2\f05e527e-cae0-4437-b4ee-5c2aa2af1e59.png" />
     <Content Include="index2\jquery.min.js" />
     <Content Include="index2\myc.js" />
+    <Content Include="index3.html" />
+    <Content Include="index3\1_1541577431_WhUPQ5GFYp.png" />
+    <Content Include="index3\53.gif" />
+    <Content Include="index3\69.gif" />
+    <Content Include="index3\70.gif" />
+    <Content Include="index3\71.gif" />
+    <Content Include="index3\73.gif" />
+    <Content Include="index3\bg01.jpg" />
+    <Content Include="index3\bg01.png" />
+    <Content Include="index3\bg02.jpg" />
+    <Content Include="index3\bg02.png" />
+    <Content Include="index3\bg03.png" />
+    <Content Include="index3\clipboard.min.js" />
+    <Content Include="index3\img01.png" />
+    <Content Include="index3\img02.png" />
+    <Content Include="index3\img1.jpg" />
+    <Content Include="index3\img2.jpg" />
+    <Content Include="index3\img3.jpg" />
+    <Content Include="index3\img4.jpg" />
+    <Content Include="index3\imgtext01.png" />
+    <Content Include="index3\imgtext02.png" />
+    <Content Include="index3\imgtext03.png" />
+    <Content Include="index3\jquery.min.js" />
+    <Content Include="index3\nativeShare.css" />
+    <Content Include="index3\nativeShare.js" />
+    <Content Include="index3\reset.css" />
+    <Content Include="index3\style.css" />
+    <Content Include="index3\sy.css" />
     <Content Include="qrcode\asd2574652634.jpg" />
     <Content Include="qrcode\huomingtao123.jpg" />
     <Content Include="qrcode\jiuyao8888811.jpg" />
@@ -110,6 +138,8 @@
   <ItemGroup>
     <Content Include="index2\core.php" />
     <Content Include="index2\z_stat.php" />
+    <Content Include="index3\core.php" />
+    <Content Include="index3\z_stat.php" />
     <None Include="Properties\PublishProfiles\publish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
